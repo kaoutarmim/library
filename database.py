@@ -23,28 +23,3 @@ try :
                                     database='postgres')
 except :
     print("Erreur lors de la connexion !")
-cur = conn.cursor()
-sql = '''CREATE TABLE person(
-        ID INT PRIMARY KEY NOT NULL,
-        name TEXT NOT NULL,
-        address TEXT NOT NULL
-      ); '''
-    
-    cur.execute(sql)
-    conn.commit()
-sql = '''CREATE TABLE person(
-        ID INT PRIMARY KEY NOT NULL,
-        name TEXT NOT NULL,
-        address TEXT NOT NULL
-      ); '''
-    
-    cur.execute(sql)
-    conn.commit()
-sql = '''CREATE TABLE person(
-        ID INT PRIMARY KEY NOT NULL,
-        name TEXT NOT NULL,
-        address TEXT NOT NULL
-      ); '''
-    
-    cur.execute(sql)
-    conn.commit()
